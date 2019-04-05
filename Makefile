@@ -5,7 +5,7 @@ CFLAGS = -c -pedantic-errors -std=c++14 -Wall
 LFLAGS = -pedantic-errors -Wall
 
 OBJS = p6_main.o Chain_ship.o Controller.o Cruise_ship.o Cruiser.o Geometry.o Island.o Local_view.o Map_view.o Model.o Navigation.o Sailing_view.o Ship.o Ship_component.o Ship_composite.o Ship_component_factory.o Sim_object.o Tanker.o Torpedo_boat.o Track_base.o Twod_view.o Utility.o View.o Warship.o
-PROG = p6exe
+PROG = simulation
 
 default: $(PROG)
 
