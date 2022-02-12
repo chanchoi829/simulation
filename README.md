@@ -9,8 +9,10 @@ $ git clone https://github.com/chanchoi829/simulation.git
 $ cd simulation
 ```
 
-Make and Run:
+Build and Run:
 ```bash
+$ mkdir build && cd build
+$ cmake ../
 $ make
 $ ./simulation
 ```
