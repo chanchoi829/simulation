@@ -7,11 +7,11 @@
 
 #include "View.h"
 
-class Sailing_view : public View {
+class Sailing_view : public View
+{
 public:
-	// Print Sailing data for all Ships.
-	void draw() override;
-
+    // Print Sailing data for all Ships.
+    void draw() override;
 };
 
 #endif

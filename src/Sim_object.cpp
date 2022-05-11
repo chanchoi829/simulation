@@ -3,4 +3,6 @@
 
 using namespace std;
 
-Sim_object::Sim_object(const string& name_) : name(name_){}
+Sim_object::Sim_object(const string& name_)
+    : name(name_)
+{ }

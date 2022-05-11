@@ -17,19 +17,20 @@ resistance 9, firepower 3, maximum attacking range 5
 
 struct Point;
 
-class Torpedo_boat : public Warship {
+class Torpedo_boat : public Warship
+{
 public:
-	Torpedo_boat(const std::string& name_, Point position_);
+    Torpedo_boat(const std::string& name_, Point position_);
 
-	// When target is out of range this Torpedo_boat can move,
-	// set the target's loation as the destination.
-	void update() override;
+    // When target is out of range this Torpedo_boat can move,
+    // set the target's loation as the destination.
+    void update() override;
 
-	// Describe this Torpedo_boat's state
-	void describe() const override;
+    // Describe this Torpedo_boat's state
+    void describe() const override;
 
-	// Perform Torpedo_boat specific behavior for receive_hit
-	void receive_hit(int hit_force, std::shared_ptr<Ship> attacker_ptr) override;
+    // Perform Torpedo_boat specific behavior for receive_hit
+    void receive_hit(int hit_force, std::shared_ptr<Ship> attacker_ptr) override;
 };
 
 #endif
